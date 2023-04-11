@@ -13,17 +13,17 @@
 
 This an NLP Model that uses SMS data to predict whether the SMS is spam using These Machine Learning Algorthims: 
 
-svc = SVC(kernel='sigmoid', gamma=1.0)
-knc = KNeighborsClassifier()
-mnb = MultinomialNB()
-dtc = DecisionTreeClassifier(max_depth=5)
-lrc = LogisticRegression(solver='liblinear', penalty='l1')
-rfc = RandomForestClassifier(n_estimators=50, random_state=2)
-abc = AdaBoostClassifier(n_estimators=50, random_state=2)
-bc = BaggingClassifier(n_estimators=50, random_state=2)
-etc = ExtraTreesClassifier(n_estimators=50, random_state=2)
-gbdt = GradientBoostingClassifier(n_estimators=50,random_state=2)
-xgb = XGBClassifier(n_estimators=50,random_state=2)
+* Support Vector Classifier
+* KNeighborsClassifier()
+* MultinomialNB()
+* DecisionTreeClassifier
+* LogisticRegression
+* RandomForestClassifier
+* AdaBoostClassifier
+* BaggingClassifier
+* ExtraTreesClassifier
+* GradientBoostingClassifier
+* XGBClassifier
 
 Data cleaning and processing techniques are done using the TFIDF Vectorizer 
 
