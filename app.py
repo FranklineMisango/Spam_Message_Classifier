@@ -13,6 +13,12 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
+from PIL import Image
+
+st.title("Email/SMS Spam Classifier")
+
+image = Image.open('spam.jpg')
+st.image(image, caption='Spam_Categorizer')
 
 ps = PorterStemmer()
 
@@ -44,7 +50,6 @@ def transform_text(text):
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
-st.title("Email/SMS Spam Classifier")
 
 input_sms = st.text_area("Enter the message")
 
